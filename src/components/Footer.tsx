@@ -1,29 +1,29 @@
-import { Link } from 'react-router-dom';
-import { Facebook, Youtube, Instagram, Twitter, Phone, Mail, MapPin, Play } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Link } from "react-router-dom";
+import { Facebook, Youtube, Instagram, Twitter, Phone, Mail, MapPin, Play } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook', color: 'hover:text-blue-500' },
-    { icon: Youtube, href: '#', label: 'YouTube', color: 'hover:text-red-500' },
-    { icon: Instagram, href: '#', label: 'Instagram', color: 'hover:text-pink-500' },
-    { icon: Twitter, href: '#', label: 'Twitter/X', color: 'hover:text-blue-400' },
+    { icon: Facebook, href: "#", label: "Facebook", color: "hover:text-blue-500" },
+    { icon: Youtube, href: "#", label: "YouTube", color: "hover:text-red-500" },
+    { icon: Instagram, href: "#", label: "Instagram", color: "hover:text-pink-500" },
+    { icon: Twitter, href: "#", label: "Twitter/X", color: "hover:text-blue-400" },
   ];
 
   const quickLinks = [
-    { name: 'About Us', path: '/about' },
-    { name: 'Services', path: '/services' },
-    { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'Contact', path: '/contact' },
+    { name: "About Us", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "Blog", path: "/blog" },
+    { name: "Contact", path: "/contact" },
   ];
 
   const services = [
-    'Marketing Strategy',
-    'Event Broadcasting',
-    'Live Streaming',
-    'Sponsorship Management',
-    'Media Consultancy',
+    "Marketing Strategy",
+    "Event Broadcasting",
+    "Live Streaming",
+    "Sponsorship Management",
+    "Media Consultancy",
   ];
 
   return (
@@ -42,10 +42,10 @@ const Footer = () => {
                 <span className="text-xs text-muted-foreground -mt-1">Broadcasting Excellence</span>
               </div>
             </Link>
-            
+
             <p className="text-muted-foreground mb-6 max-w-md">
-              The Gateway to Exceptional Marketing & Event Broadcasting in South Sudan. 
-              We deliver premium live streaming, marketing strategies, and sponsorship management services.
+              The Gateway to Exceptional Marketing & Event Broadcasting in South Sudan. We deliver premium live
+              streaming, marketing strategies, and sponsorship management services.
             </p>
 
             {/* Contact Info */}
@@ -118,43 +118,43 @@ const Footer = () => {
             <p className="text-muted-foreground mb-6">
               Let's create an unforgettable experience together. Contact us today.
             </p>
-            <Button 
+            <Button
               asChild
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold hover-lift"
             >
-              <Link to="/contact">
-                Let's Collaborate
-              </Link>
+              <Link to="/contact">Let's Collaborate</Link>
             </Button>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-8 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center">
-          <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
-            <p className="text-muted-foreground text-sm">
-              © {new Date().getFullYear()} Liberty Media. All rights reserved.
-            </p>
-            <p className="text-muted-foreground text-sm">
-              Designed & build by{' '}
-              <a 
-                href="https://facebook.com/simonakuienatem" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-primary hover:text-primary/80 transition-colors"
-              >
-                Simon Akuien Atem
+        <div className="mt-8 pt-6 border-t border-border">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+              <p className="text-muted-foreground text-sm">
+                © {new Date().getFullYear()} Liberty Media. All rights reserved.
+              </p>
+              <p className="text-muted-foreground text-sm">
+                Designed & built by{" "}
+                <a
+                  href="https://web.facebook.com/profile.php?id=61572703111798"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-primary/80 transition-colors"
+                >
+                  Simon Akuien Atem
+                </a>
+              </p>
+            </div>
+            <div className="flex space-x-6">
+              <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                Privacy Policy
               </a>
-            </p>
-          </div>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-              Terms of Service
-            </a>
+              <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                Terms of Service
+              </a>
+            </div>
           </div>
         </div>
       </div>
